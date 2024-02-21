@@ -1,0 +1,179 @@
+% Project:  TeX Resume Template
+% Author:   Samrat Baral
+
+% MIT License
+
+% Copyright (c) 2024 Samrat Baral
+
+% Permission is hereby granted, free of charge, to any person obtaining a copy
+% of this software and associated documentation files (the "Software"), to deal
+% in the Software without restriction, including without limitation the rights
+% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Software, and to permit persons to whom the Software is
+% furnished to do so, subject to the following conditions:
+
+% The above copyright notice and this permission notice shall be included in all
+% copies or substantial portions of the Software.
+
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+% SOFTWARE.
+
+
+\documentclass[a4paper,10pt]{article}
+
+%--------------------------------------------------------------------------------
+%								Page Layout
+%--------------------------------------------------------------------------------
+% Set document margins
+\usepackage[left=0.35 in,top=0.5 in,right=0.25 in,bottom=0.6 in]{geometry}
+%--------------------------------------------------------------------------------
+%								Packages
+%--------------------------------------------------------------------------------
+\usepackage{amsmath} 		% For mathematical symbols
+\usepackage{graphicx}		% For mathematical symbols
+\usepackage{hyperref}		% For mathematical symbols
+\usepackage{array}		% Required for boldface (\bf and \bfseries) tabular columns
+\usepackage{etoolbox}		% Required for ifthenelse statements
+\pagestyle{empty}		% Suppress page numbers
+\usepackage{tabu}		% Flexible tables
+\usepackage{changepage}	% For custom margins
+\usepackage{enumitem}		% To customize lists
+\usepackage{fontawesome5}	% https://mirror.math.princeton.edu/pub/CTAN/fonts/fontawesome5/doc/fontawesome5.pdf
+\usepackage{microtype}	% For spcaed small caps
+\usepackage{blindtext} 	% to insert blind text
+\usepackage{tgpagella}	% which sets as default font the TeX Gyre Pagella.
+\usepackage[english]{babel} % multilingual support
+\usepackage[utf8]{inputenc} % encoding
+%--------------------------------------------------------------------------------
+%								Fonts and Lines
+%--------------------------------------------------------------------------------
+\setlist{leftmargin=*, noitemsep, topsep=-1\parskip} % Set the Spacing between fonts and lines
+%--------------------------------------------------------------------------------
+%								Personal Information [Change here]
+%--------------------------------------------------------------------------------
+% Set applicant's personal data for header
+
+\newcommand{\Name}{\begin{Huge}FULL NAME\end{Huge}}
+\newcommand{\NameLink}{\href{https://google.com}{Links}}
+\newcommand{\Phone}{\href{tel:(000)000-000}{\faPhone\ (000)000-0000}}
+\newcommand{\Email}{\href{mailto:mail@mail.com}{\faEnvelope\ mail@mail.com}}
+
+\newcommand{\PersonalWebsite}{\href{www.google.com}{
+\faGithub* google.com}}
+
+\newcommand{\GitHubURL}{\href{https://github.com/username/}{\faGithub \ username}}
+\newcommand{\LinkedInURL}{\href{https://www.linkedin.com/in/username/}{\faLinkedin\ username}}
+
+\newcommand{\Address}{\faMapPin\ your location}
+
+\newcommand{\Skills}
+{\begin{flushleft}\begin{large}\textbf{SKILLS \hrulefill}\end{large}\end{flushleft}}
+\newcommand{\Work}
+{\begin{flushleft}\begin{large}\textbf{WORK EXPERIENCES \hrulefill}\end{large}\end{flushleft}}
+\newcommand{\Project}
+{\begin{flushleft}\begin{large}\textbf{PERSONAL PROJECTS/OPEN-SOURCE CONTRIBUTION by \GitHubURL\ \hrulefill}\end{large}\end{flushleft}}
+\newcommand{\Extra}
+{\begin{flushleft}\begin{large}\textbf{LEADERSHIP ROLES AND AWARDS \hrulefill}\end{large}\end{flushleft}}
+\newcommand{\Education}
+{\begin{flushleft}\begin{large}\textbf{EDUCATION AND CERTIFICATION \hrulefill }\end{large}\end{flushleft}}
+
+
+\newcommand{\SoftSkills}
+{Problem-Solving}
+\newcommand{\Databases}
+{mySQL}
+\newcommand{\OS}
+{Linux/UNIX}
+\newcommand{\Languages}
+{Python}
+\newcommand{\Framework}
+{Flask}
+\newcommand{\IDE}
+{VSCode}
+\newcommand{\DataTool}
+{Jupyter Notebook.}
+\newcommand{\Other}
+{GitHub.}
+
+%--------------------------------------------------------------------------------
+%                            Document Began
+%--------------------------------------------------------------------------------
+
+\begin{document}
+%--------------------------------------------------------------------------------
+%                            Information
+%--------------------------------------------------------------------------------
+\Name \hspace*{0.25 in} \Phone \hspace*{0.25 in} \Email \hspace*{0.25 in} \Address\
+
+\vspace*{5pt}
+\GitHubURL \hspace{0.25 in} \LinkedInURL\
+
+%--------------------------------------------------------------------------------
+%                            Skills
+%--------------------------------------------------------------------------------
+\Skills
+\begin{itemize}
+\item \textbf{\SoftSkills}.
+
+\item \textbf{Databases: }\Databases
+
+\item \textbf{Operating Systems: }\OS
+
+\item \textbf{Programming Languages: }\Languages
+
+\item \textbf{Frameworks: }\Framework
+
+\item \textbf{IDEs: }\IDE
+
+\item \textbf{Data Science Tools: }\DataTool
+
+\item \textbf{Others: }\Other
+
+\end{itemize}\vspace*{5pt}
+%--------------------------------------------------------------------------------
+%                            Work Experience
+%--------------------------------------------------------------------------------
+\Work
+Position or Role,
+\textit{\href{https://www.google.com}{ProjectName}}{\hspace{0.15 in} New York City, NY| \textit{\href{www.google.com}{www.website.com}} \textit{\href{https://website.com}{ \faInfoCircle
+\ }}}{\hspace{0.05 in}MONTH YEAR – MONTH YEAR}\vspace*{5pt}
+\begin{itemize}
+\item I always dreamed about being stranded on a desert island until it actually happened. \textbf{actually happened}  by 40\%
+
+\item The tortoise jumped into the lake with dreams of becoming a sea turtle.
+
+\item Documented, blogged, and presented sprints, project poster to sponsor and made project video on \textit{\href{https:/www.youtube.com}{YouTube}}.
+
+\item He went on a whiskey diet and immediately lost  \textbf{three days.}
+
+\item You'll see the rainbow bridge after it rains cats  \& C dogs.
+
+\end{itemize}\vspace*{5pt}
+%--------------------------------------------------------------------------------
+%                            Projects
+%--------------------------------------------------------------------------------
+\vspace*{5pt} \Project
+\begin{itemize}
+\item C++  Game Developer for  \text{\href{https://github.com}{\textbf{GTA55} \faGithub}} App for free to play and enjoy GTA55 online.
+\end{itemize}\vspace*{5pt}
+\vspace*{5pt} \Extra
+\begin{itemize}
+\item \textbf{World Chess Championship (WCC)} winner by \text{\href{https://google.com}{10th Place:}} 400 participated and \textbf{won} 340 games.
+
+\end{itemize}\vspace*{5pt}
+%--------------------------------------------------------------------------------
+%                            Education and Certification
+%--------------------------------------------------------------------------------
+\Education
+
+\begin{itemize}
+\item \text{\href{https://google.com}{ Bachelor of Nothing }} \hspace{0.25 in} University of Nowhere \hspace{0.45 in} Milkyway, Unknown \hspace{0.55 in} MONTH YEAR
+
+\end{itemize}
+\dotfill
+\end{document}

@@ -1,0 +1,212 @@
+\documentclass[a4paper,11pt]{article}
+% Project:  TeX Cover Letter Template
+% Author:   Samrat Baral
+
+% MIT License
+
+% Copyright (c) 2024 Samrat Baral
+
+% Permission is hereby granted, free of charge, to any person obtaining a copy
+% of this software and associated documentation files (the "Software"), to deal
+% in the Software without restriction, including without limitation the rights
+% to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+% copies of the Software, and to permit persons to whom the Software is
+% furnished to do so, subject to the following conditions:
+
+% The above copyright notice and this permission notice shall be included in all
+% copies or substantial portions of the Software.
+
+% THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+% IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+% FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+% AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+% LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+% OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+% SOFTWARE.
+
+%--------------------------------------------------------------------------------
+%								Job Description
+%--------------------------------------------------------------------------------
+
+% Position--------------------------------------------------------------------
+\newcommand{\position}{Job Role} % The position (e.g. "Software Engineer")
+
+% Course Works ---------------------------------------------------------------
+\newcommand{\courses}{Couse Name} % The course (e.g. "Data Structure and Algorithm")
+
+% Relevant Technology/Experience ---------------------------------------------
+
+% First Relevant Technology
+\newcommand{\firstrelevanttechnology}{first relevant technology} % The first relevant technology (e.g. "Python, Java, C++")
+
+% Secound Relevant Technology
+\newcommand{\secondrelevanttechnology}{secound relevant technology} %  (e.g. "data analysis, build machine learning models like CNN, RNN architectures")
+
+% Third Relevant Technology
+\newcommand{\thirdrelevanttechnology}{third relevant technology} % The third relevant technology (e.g. "i.e. domain-specific language models")
+
+
+% Company information----------------------------------------------------------
+
+\newcommand{\company}{Company} 		% The company (e.g. "Microsoft Corporation")
+\newcommand{\street}{Street Address}	% The company's street address (e.g. "1 Microsoft Way")
+\newcommand{\city}{City} 				% The company's city (e.g. "Redmond") put only company here
+\newcommand{\state}{State}			    % The company's state prefix (e.g. "WA")
+\newcommand{\zip}{ZIP} % The company's zip code (e.g. "98052")
+
+%--------------------------------------------------------------------------------
+%								Page Layout
+%--------------------------------------------------------------------------------
+% Set document margins
+\usepackage[left=1 in,top=1 in,right=1 in,bottom=1 in]{geometry}
+%--------------------------------------------------------------------------------
+%								Packages
+%--------------------------------------------------------------------------------
+\usepackage{amsmath} 		% For mathematical symbols
+\usepackage{graphicx}		% For mathematical symbols
+\usepackage{hyperref}		% For mathematical symbols
+\usepackage{array}		% Required for boldface (\bf and \bfseries) tabular columns
+\usepackage{etoolbox}		% Required for ifthenelse statements
+\pagestyle{empty}		% Suppress page numbers
+\usepackage{tabu}		% Flexible tables
+\usepackage{changepage}	% For custom margins
+\usepackage{enumitem}		% To customize lists
+\usepackage{fontawesome5}	% https://mirror.math.princeton.edu/pub/CTAN/fonts/fontawesome5/doc/fontawesome5.pdf
+\usepackage{microtype}	% For spcaed small caps
+\usepackage{blindtext} 	% to insert blind text
+\usepackage{tgpagella}	% which sets as default font the TeX Gyre Pagella.
+\usepackage[english]{babel} % multilingual support
+\usepackage[utf8]{inputenc} % encoding
+\usepackage{eso-pic}
+\usepackage{charter}
+%--------------------------------------------------------------------------------
+%								Fonts and Lines
+%--------------------------------------------------------------------------------
+\addtolength{\topmargin}{-0.5in}
+\addtolength{\textheight}{1.0in}
+\definecolor{gr}{RGB}{225,225,225}
+
+%--------------------------------------------------------------------------------
+%								Personal Info
+%--------------------------------------------------------------------------------
+
+% Personal/Sender -------------------------------------------------------------
+
+\newcommand{\Name}{\begin{Huge}FULL NAME\end{Huge}}
+\newcommand{\NameLink}{\href{https://google.com}{Links}}
+\newcommand{\Phone}{\href{tel:(000)000-000}{\faPhone\ (000)000-0000}}
+\newcommand{\Email}{\href{mailto:mail@mail.com}{\faEnvelope\ mail@mail.com}}
+\newcommand{\PersonalWebsite}{\href{www.google.com}{\faGithub* google.com}}
+\newcommand{\GitHubURL}{\href{https://github.com/username/}{\faGithub \ username}}
+\newcommand{\LinkedInURL}{\href{https://www.linkedin.com/in/username/}{\faLinkedin\ username}}
+\newcommand{\Address}{\faMapPin\ your location}
+
+% Recipient-------------------------------------------------------------------
+\newcommand{\recipient}{Hiring Manager}  % The recipient (e.g. "Hiring Manager")
+\newcommand{\greeting}{Dear}			   % The greeting to use (e.g. "Dear")
+\newcommand{\closer}{Best Regards} 	   % The closer to use (e.g. "Kind Regards")
+
+%--------------------------------------------------------------------------------
+%								Paragraphs Constant
+%--------------------------------------------------------------------------------
+
+% First Paragraph: Introduction------------------------------------------------------------------------
+\newcommand{\FirstParagraph}{\firstrelevanttechnology hey had no proof. He knew that they knew he had done it but they
+ didn't have any proof. It was a huge distinction and it was the difference between him keeping his freedom or
+ being locked away for decades. They continued to question him, probing him for information that they could use
+ against him or find the proof they needed to put him away. He smiled and continued to block their every inquiry by
+ feigning his innocence for a crime they all knew he committed}
+
+% Second Paragraph: Experience and Skills---------------------------------------------------------------------------
+\newcommand{\SecondParagraph}{\secondrelevanttechnology Where do they get a random paragraph?" he wondered as he clicked the generate button.
+Do they just write a random paragraph or do they get it somewhere? At that moment he read the random paragraph and
+realized it was about random paragraphs and his world would never be the same. With six children in tow, Catherine
+raced to the airport departing gate. This wasn't an easy task as the children had other priorities than to get to
+the gate. She knew that she was tight on time and the frustration came out as she yelled at the kids to keep up.
+They continued to test her, pretending not to listen and to move in directions that only slowed them down. They
+had no idea the wrath they were about to receive when Catherine made it to the gate only to be informed that
+they had all missed the plane. }
+% Third Paragraph: Job Interest---------------------------------------------------------------------------------------------------------------------------------------------------
+\newcommand{\ThirdParagraph}{\thirdrelevanttechnology According to the caption on the bronze marker placed by the Multnomah Chapter of the
+ Daughters of the American Revolution on May 12, 1939, “College Hall (is) the oldest building in continuous use for
+ Educational purposes west of the Rocky Mountains. Here were educated men and women who have won recognition throughout
+  the world in all the learned professions.}
+% Fourth Paragraph: Reachout and Closer-------------------------------------------------------------------------------------------------------------------------------------------
+\newcommand{\FourthParagraph}{ It was a simple green chair. There was nothing extraordinary
+ about it or so it seemed. It was the type of chair one would pass without even noticing it was there, let alone what
+ the actual color of it was. It was due to this common and unassuming appearance that few people actually stopped to
+ sit in it and discover its magical powers. }
+
+%--------------------------------------------------------------------------------
+%								Body
+%--------------------------------------------------------------------------------
+
+\newcommand{\body}{
+\hspace{0.5 in}
+
+\FirstParagraph  % First Paragraph  : Introduction
+
+\hspace{0.15 in}
+
+\SecondParagraph % Second Paragraph : Experience and Skills
+
+\hspace{0.15 in}
+
+\ThirdParagraph  % Third Paragraph  : Job Interest
+
+\hspace{0.15 in}
+
+\FourthParagraph % Fourth Paragraph : Reachout and Closer
+}
+%--------------------------------------------------------------------------------
+%                            Document Began
+%--------------------------------------------------------------------------------
+\begin{document}
+\begin{flushleft}
+\hrulefill\\
+\vspace{0.2in}
+
+% Opening block
+\today\\
+
+\vspace{0.15in}
+
+\recipient
+
+\company
+
+\street
+
+\city, \state\ \zip\\
+
+\vspace{0.15in}
+
+\greeting\ \recipient,\\
+
+\end{flushleft}
+
+
+% Body
+\vspace{-0.1in}
+\setlength
+\parindent{24pt}
+\noindent\ \body\
+
+% Closer
+
+\begin{flushleft}
+\closer,
+\vspace{0.15in}
+
+% Footer
+% \includegraphics[scale=0.20]{./signature.png}\\ % add your signature here in .png file
+\Name\\
+signature goes here\\
+\hrulefill\\
+\Phone\hfill\\
+\Email\hfill\\
+\LinkedInURL\hfill\\
+\hrulefill\\
+
+\end{flushleft}
+\end{document}
