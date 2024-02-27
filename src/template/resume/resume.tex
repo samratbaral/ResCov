@@ -26,14 +26,14 @@
 
 \documentclass[a4paper,10pt]{article}
 
-%--------------------------------------------------------------------------------
-%								Page Layout
-%--------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------------------------------------
+%												   Page Layout
+%-----------------------------------------------------------------------------------------------------------------------
 % Set document margins
 \usepackage[left=0.35 in,top=0.5 in,right=0.25 in,bottom=0.6 in]{geometry}
-%--------------------------------------------------------------------------------
-%								Packages
-%--------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------------------------------------
+%								                   Packages
+%-----------------------------------------------------------------------------------------------------------------------
 \usepackage{amsmath} 		% For mathematical symbols
 \usepackage{graphicx}		% For mathematical symbols
 \usepackage{hyperref}		% For mathematical symbols
@@ -49,13 +49,28 @@
 \usepackage{tgpagella}	% which sets as default font the TeX Gyre Pagella.
 \usepackage[english]{babel} % multilingual support
 \usepackage[utf8]{inputenc} % encoding
-%--------------------------------------------------------------------------------
-%								Fonts and Lines
-%--------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------------------------------------
+%								                  Fonts and Lines
+%-----------------------------------------------------------------------------------------------------------------------
 \setlist{leftmargin=*, noitemsep, topsep=-1\parskip} % Set the Spacing between fonts and lines
-%--------------------------------------------------------------------------------
-%								Personal Information [Change here]
-%--------------------------------------------------------------------------------
+
+%-----------------------------------------------------------------------------------------------------------------------
+%								                     Constants
+%-----------------------------------------------------------------------------------------------------------------------
+\newcommand{\Skills}
+{\begin{flushleft}\begin{large}\textbf{SKILLS \hrulefill}\end{large}\end{flushleft}}
+\newcommand{\Work}
+{\begin{flushleft}\begin{large}\textbf{WORK EXPERIENCES \hrulefill}\end{large}\end{flushleft}}
+\newcommand{\Project}
+{\begin{flushleft}\begin{large}\textbf{PERSONAL PROJECTS/OPEN-SOURCE CONTRIBUTION by \GitHubURL\ \hrulefill}\end{large}\end{flushleft}}
+\newcommand{\Extra}
+{\begin{flushleft}\begin{large}\textbf{LEADERSHIP ROLES AND AWARDS \hrulefill}\end{large}\end{flushleft}}
+\newcommand{\Education}
+{\begin{flushleft}\begin{large}\textbf{EDUCATION AND CERTIFICATION \hrulefill }\end{large}\end{flushleft}}
+
+%-----------------------------------------------------------------------------------------------------------------------
+%								                Personal Information
+%-----------------------------------------------------------------------------------------------------------------------
 % Set applicant's personal data for header
 
 \newcommand{\Name}{\begin{Huge}FULL NAME\end{Huge}}
@@ -71,51 +86,50 @@
 
 \newcommand{\Address}{\faMapPin\ your location}
 
-\newcommand{\Skills}
-{\begin{flushleft}\begin{large}\textbf{SKILLS \hrulefill}\end{large}\end{flushleft}}
-\newcommand{\Work}
-{\begin{flushleft}\begin{large}\textbf{WORK EXPERIENCES \hrulefill}\end{large}\end{flushleft}}
-\newcommand{\Project}
-{\begin{flushleft}\begin{large}\textbf{PERSONAL PROJECTS/OPEN-SOURCE CONTRIBUTION by \GitHubURL\ \hrulefill}\end{large}\end{flushleft}}
-\newcommand{\Extra}
-{\begin{flushleft}\begin{large}\textbf{LEADERSHIP ROLES AND AWARDS \hrulefill}\end{large}\end{flushleft}}
-\newcommand{\Education}
-{\begin{flushleft}\begin{large}\textbf{EDUCATION AND CERTIFICATION \hrulefill }\end{large}\end{flushleft}}
+%-----------------------------------------------------------------------------------------------------------------------
+%                                          Job Skills and Experience
+%-----------------------------------------------------------------------------------------------------------------------
 
-
+% Add your Soft Skills which make it specific to job description.
 \newcommand{\SoftSkills}
 {Problem-Solving}
+% Add your Databases which you have experience with. example: mySQL, PostgreSQL, MongoDB
 \newcommand{\Databases}
 {mySQL}
+% Add your Operating Systems which you have experience with. example: Windows, Linux/UNIX
 \newcommand{\OS}
 {Linux/UNIX}
+% Add your Programming Languages which you have experience with. example: Python, Java, C++
 \newcommand{\Languages}
 {Python}
+% Add your Frameworks which you have experience with. example: Django, Flask, React
 \newcommand{\Framework}
 {Flask}
+% Add your IDEs which you have experience with. example: VSCode, PyCharm, Eclipse
 \newcommand{\IDE}
 {VSCode}
+% Add your Data Science Tools which you have experience with. example: Jupyter Notebook, Tableau, PowerBI
 \newcommand{\DataTool}
 {Jupyter Notebook.}
 \newcommand{\Other}
 {GitHub.}
 
-%--------------------------------------------------------------------------------
-%                            Document Began
-%--------------------------------------------------------------------------------
+%---------------------------------------------------------------------------------------------------------------------------
+%                                                   Document Began
+%-----------------------------------------------------------------------------------------------------------------------
 
 \begin{document}
-%--------------------------------------------------------------------------------
-%                            Information
-%--------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------------------------------------
+%                                         Initial Personal Information
+%-----------------------------------------------------------------------------------------------------------------------
 \Name \hspace*{0.25 in} \Phone \hspace*{0.25 in} \Email \hspace*{0.25 in} \Address\
 
 \vspace*{5pt}
 \GitHubURL \hspace{0.25 in} \LinkedInURL\
 
-%--------------------------------------------------------------------------------
-%                            Skills
-%--------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------------------------------------
+%                                                 Skills and Abilities
+%-----------------------------------------------------------------------------------------------------------------------
 \Skills
 \begin{itemize}
 \item \textbf{\SoftSkills}.
@@ -135,44 +149,50 @@
 \item \textbf{Others: }\Other
 
 \end{itemize}\vspace*{5pt}
-%--------------------------------------------------------------------------------
-%                            Work Experience
-%--------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------------------------------------
+%                                                   Work Experience
+%-----------------------------------------------------------------------------------------------------------------------
 \Work
 Position or Role,
-\textit{\href{https://www.google.com}{ProjectName}}{\hspace{0.15 in} New York City, NY| \textit{\href{www.google.com}{www.website.com}} \textit{\href{https://website.com}{ \faInfoCircle
+\textit{\href{https://www.google.com}{ProjectName}}{
+    \hspace{0.15 in} New York City, NY| \textit{\href{www.google.com}{www.website.com}}
+    \textit{\href{https://website.com}{ \faInfoCircle
 \ }}}{\hspace{0.05 in}MONTH YEAR – MONTH YEAR}\vspace*{5pt}
 \begin{itemize}
 \item I always dreamed about being stranded on a desert island until it actually happened. \textbf{actually happened}  by 40\%
 
 \item The tortoise jumped into the lake with dreams of becoming a sea turtle.
 
-\item Documented, blogged, and presented sprints, project poster to sponsor and made project video on \textit{\href{https:/www.youtube.com}{YouTube}}.
+\item Documented, blogged, and presented sprints, project poster to sponsor and made project
+video on \textit{\href{https:/www.youtube.com}{YouTube}}.
 
 \item He went on a whiskey diet and immediately lost  \textbf{three days.}
 
 \item You'll see the rainbow bridge after it rains cats  \& C dogs.
 
 \end{itemize}\vspace*{5pt}
-%--------------------------------------------------------------------------------
-%                            Projects
-%--------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------------------------------------
+%                                                   Projects
+%-----------------------------------------------------------------------------------------------------------------------
 \vspace*{5pt} \Project
 \begin{itemize}
-\item C++  Game Developer for  \text{\href{https://github.com}{\textbf{GTA55} \faGithub}} App for free to play and enjoy GTA55 online.
+\item C++  Game Developer for  \text{\href{https://github.com}{\textbf{GTA55} \faGithub}} App for free to play and
+enjoy GTA55 online.
 \end{itemize}\vspace*{5pt}
 \vspace*{5pt} \Extra
 \begin{itemize}
-\item \textbf{World Chess Championship (WCC)} winner by \text{\href{https://google.com}{10th Place:}} 400 participated and \textbf{won} 340 games.
+\item \textbf{World Chess Championship (WCC)} winner by \text{\href{https://google.com}{10th Place:}} 400 participated
+and \textbf{won} 340 games.
 
 \end{itemize}\vspace*{5pt}
-%--------------------------------------------------------------------------------
-%                            Education and Certification
-%--------------------------------------------------------------------------------
+%-----------------------------------------------------------------------------------------------------------------------
+%                                          Education and Certification
+%-----------------------------------------------------------------------------------------------------------------------
 \Education
 
 \begin{itemize}
-\item \text{\href{https://google.com}{ Bachelor of Nothing }} \hspace{0.25 in} University of Nowhere \hspace{0.45 in} Milkyway, Unknown \hspace{0.55 in} MONTH YEAR
+\item \text{\href{https://google.com}{ Bachelor of Nothing }}
+\hspace{0.25 in} University of Nowhere \hspace{0.45 in} Milkyway, Unknown \hspace{0.55 in} MONTH YEAR
 
 \end{itemize}
 \dotfill
