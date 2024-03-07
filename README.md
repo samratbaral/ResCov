@@ -5,6 +5,21 @@
 
 ReCobot is a Python and LaTex based project that automates the process of creating a resume and cover letter for job application. The user can input their personal details and the job description. The program will then generate a resume and cover letter for the user.
 
+## Installation
+```bash
+python3 -m venv venv
+. venv/bin/activate
+pip install -r requirement.txt
+python main.py
+```
+
+## Requirements
+```bash
+Python 3.7 or higher
+LaTeX (for generating PDF)
+python -m pip install pylatex
+```
+
 ## Features
 1. User can input their personal details.
 2. User can input the job description.

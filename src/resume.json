@@ -1,0 +1,110 @@
+{
+  "documentClass": {
+    "class": "article",
+    "options": ["a4paper", "10pt"]
+  },
+  "pageLayout": {
+    "geometry": {
+      "left": "0.35 in",
+      "top": "0.5 in",
+      "right": "0.25 in",
+      "bottom": "0.6 in"
+    }
+  },
+  "packages": [
+    "amsmath",
+    "graphicx",
+    "hyperref",
+    "array",
+    "etoolbox",
+    "tabu",
+    "changepage",
+    "enumitem",
+    "fontawesome5",
+    "microtype",
+    "blindtext",
+    "tgpagella",
+    "babel",
+    "inputenc"
+  ],
+  "personalInformation": {
+    "fullName": "FULL NAME",
+    "phone": "(000)000-0000",
+    "email": "mail@mail.com",
+    "website": "www.google.com",
+    "githubURL": "https://github.com/username/",
+    "linkedinURL": "https://www.linkedin.com/in/username/",
+    "address": "your location"
+  },
+  "skillsAndAbilities": {
+     "Abilities": ["Problem-Solving", "Teamwork", "Communication"] ,
+     "Databases": ["mySQL"] ,
+     "OS": ["Linux/UNIX"] ,
+     "Languages": ["Python"] ,
+     "Frameworks": ["Flask"] ,
+     "IDEs": ["VSCode"] ,
+     "Tools": ["Jupyter Notebook"] ,
+     "Others": ["GitHub"]
+  },
+
+  "workExperience": [
+    {
+      "positionOrRole": "Position or Role 1",
+      "projectName": "ProjectName 1",
+      "location": "Location 2",
+      "website": "www.website2.com",
+      "duration": "MONTH YEAR – MONTH YEAR",
+      "achievements": ["Achievement 1", "Achievement 2"]
+    },
+    {
+      "positionOrRole": "Position or Role 2",
+      "projectName": "ProjectName 2",
+      "location": "Location 2",
+      "website": "www.website2.com",
+      "duration": "MONTH YEAR – MONTH YEAR",
+      "achievements": ["Achievement 1", "Achievement 2"]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Project 1",
+      "description": "Description 1",
+      "githubLink": "https://github.com/project1"
+    },
+    {
+      "name": "Project 2",
+      "description": "Description 2",
+      "githubLink": "https://github.com/project2"
+    }
+  ],
+  "leadershipRolesAndAwards": [
+    {
+      "event": "Event 1",
+      "placement": "Placement 1",
+      "participants": "Number",
+      "gamesWon": "Number"
+    },
+    {
+      "event": "Event 2",
+      "placement": "Placement 2",
+      "participants": "Number",
+      "gamesWon": "Number"
+    }
+  ],
+  "educationAndCertification": [
+    {
+      "degree": "Degree 1",
+      "institution": "Institution 1",
+      "field": "Field 1",
+      "location": "Location 1",
+      "duration": "MONTH YEAR - MONTH YEAR"
+    },
+    {
+      "degree": "Degree 2",
+      "institution": "Institution 2",
+      "field": "Field 2",
+      "location": "Location 2",
+      "duration": "MONTH YEAR - MONTH YEAR"
+    }
+  ]
+}
