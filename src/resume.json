@@ -32,9 +32,9 @@
     "phone": "(000)000-0000",
     "email": "mail@mail.com",
     "website": "www.google.com",
-    "githubURL": "https://github.com/username/",
-    "linkedinURL": "https://www.linkedin.com/in/username/",
-    "address": "your location"
+    "githubUsername": "username",
+    "linkedinUsername": "username",
+    "address": "Location, City, Country"
   },
   "skillsAndAbilities": {
      "Abilities": ["Problem-Solving", "Teamwork", "Communication"] ,

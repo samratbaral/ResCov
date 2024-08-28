@@ -48,15 +48,26 @@ def generate_latex(resume_data):
 
 % Custom commands
 \newcommand{\Name}[1]{{\Huge #1}}
-\newcommand{\Email}[1]{{ --- #1}}
-\newcommand{\Phone}[1]{{ --- #1}}
+\newcommand{\Phone}[1]{{ \faPhone\ #1}}
+\newcommand{\Email}[1]{{ \faEnvelope\  #1}}
+\newcommand{\Address}[1]{{ \faMapPin\ #1}}
+\newcommand{\GitHubURL}[1]{{\faGithub\ #1}}
+\newcommand{\LinkedInURL}[1]{{\faLinkedin\ #1}}
+
 """
   # Ensure all subsequent string additions are correctly handled
   # Example of adding personal information as raw strings
   pi = resume_data['personalInformation']
   latex_content += rf"\Name{{{pi['fullName']}}}" + "\n"
-  latex_content += rf"\Email{{{pi['email']}}}" + "\n"
-  latex_content += rf"\Phone{{{pi['phone']}}}" + "\n"
+  latex_content += rf"\Email {{{pi['email']}}}" + "\n"
+  latex_content += rf"\Phone {{{pi['phone']}}}" + "\n"
+  latex_content += rf"\Address {{{pi['address']}}}" + "\n"
+  latex_content += "\n"
+  latex_content += rf"\GitHubURL {{{pi['githubUsername']}}}" + "\n"
+  latex_content += rf"\LinkedInURL {{{pi['linkedinUsername']}}}" + "\n"
+
+
+# {\href{https://www.linkedin.com/in/username/}{\faLinkedin\ username}}
   # And so on for the rest of the document content...
 
 
